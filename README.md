@@ -1,12 +1,14 @@
 # NBA-Player-Clustering 
 This project uses unsupervised learning to group NBA players into meaningful archetypes based on advanced stats. Instead of assigning labels manually, the data reveals natural roles that highlight contributions beyond the box score.
 
-Goal-Cluster NBA players into three intuitive roles:
+Goal:
+Cluster NBA players into three intuitive roles:
 Floor Spacers — perimeter shooters who stretch defenses
 Interior Enforcers — bigs who dominate rebounding and shot-blocking
 Star Playmakers — high-impact players driving team offense
 
-Methods-Compared multiple unsupervised clustering approaches on PCA-reduced stats:
+Methods:
+Compared multiple unsupervised clustering approaches on PCA-reduced stats:
 KMeans + PCA: Baseline method. Best separation at k=2, silhouette ≈ 0.27.
 Agglomerative + PCA: Best method. Strongest separation at k=3, silhouette ≈ 0.29. Produced clear, basketball-relevant clusters.
 DBSCAN: Tested with min_samples=10, but returned negative silhouette, meaning no meaningful structure.
